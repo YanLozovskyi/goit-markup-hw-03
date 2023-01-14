@@ -28,6 +28,8 @@ body {
   min-width: 1158px;
 }
 
+/* Basic settings */
+
 .list {
   list-style: none;
 }
@@ -36,11 +38,36 @@ body {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}
+
 .container {
   margin: 0 auto;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1158px;
+  padding: 0 15px;
   outline: 2px solid tomato;
 }
 
@@ -80,7 +107,6 @@ body {
 
 .adress .link {
   color: var(--primary-text-color);
-  font-style: normal;
 }
 
 .adress .link:hover,
@@ -92,19 +118,36 @@ body {
 
 .hero {
   background-color: var(--title-text-color);
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .hero-title {
   color: var(--color-white);
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+  margin-bottom: 48px;
 }
 
 /* Section */
 
 .hidden-title {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-subtitle .title {
@@ -120,10 +163,18 @@ body {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .about {
   background-color: var(--secondary-background-color);
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 
 /* Button */
@@ -146,7 +197,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   min-width: 169px;
   border-radius: 4px;
-  text-align: center;
 }
 
 .button.hero-btn:hover,
@@ -177,6 +227,8 @@ body {
 .footer {
   background-color: var(--title-text-color);
   color: var(--cornflower-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer .logo {
@@ -186,4 +238,9 @@ body {
 .footer .logo:hover,
 .footer .logo:focus {
   color: var(--color-for-interactive-elements);
+}
+
+.footer-description {
+  width: 264px;
+  margin-top: 14px;
 }
