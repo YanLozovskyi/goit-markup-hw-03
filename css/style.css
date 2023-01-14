@@ -58,6 +58,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
@@ -71,7 +73,13 @@ address {
   outline: 2px solid tomato;
 }
 
-/* logo */
+/* header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower-color);
+}
 
 .logo {
   color: var(--title-text-color);
