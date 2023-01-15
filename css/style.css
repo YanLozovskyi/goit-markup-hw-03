@@ -73,72 +73,7 @@ address {
   outline: 2px solid tomato;
 }
 
-/* header */
-
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--cornflower-color);
-}
-
-.logo {
-  color: var(--title-text-color);
-  font-family: Raleway, cursive;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-}
-
-.logo-color {
-  color: var(--accent-color);
-}
-
-.logo:hover,
-.logo:focus {
-  color: var(--color-for-interactive-elements);
-}
-
-/* Site nav */
-
-.site-nav .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--color-for-interactive-elements);
-}
-
-/* Adress */
-
-.adress .link {
-  color: var(--primary-text-color);
-}
-
-.adress .link:hover,
-.adress .link:focus {
-  color: var(--accent-color);
-}
-
-/* Hero */
-
-.hero {
-  background-color: var(--title-text-color);
-  text-align: center;
-  padding-top: 188px;
-  padding-bottom: 292px;
-}
-
-.hero-title {
-  color: var(--color-white);
-  font-size: 56px;
-  line-height: 1.07;
-  margin-bottom: 48px;
-}
-
-/* Section */
+/* Section general settings */
 
 .hidden-title {
   position: absolute;
@@ -171,12 +106,184 @@ address {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
+}
+
+/* header */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cornflower-color);
+}
+
+/* logo */
+
+.logo {
+  margin-right: 77px;
+  color: var(--title-text-color);
+  font-family: Raleway, cursive;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-color {
+  color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--color-for-interactive-elements);
+}
+
+/* Site navigation */
+
+.header-items {
+  display: flex;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  gap: 40px;
+}
+
+/* .site-nav .item + .item {
+  margin-left: 40px;
+} */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--color-for-interactive-elements);
+}
+
+/* Address */
+
+.address {
+  margin-left: auto;
+}
+
+.adress {
+  display: flex;
+  gap: 40px;
+}
+
+/* .adress .item + .item {
+  margin-left: 40px;
+} */
+
+.adress .link {
+  color: var(--primary-text-color);
+}
+
+.adress .link:hover,
+.adress .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 292px;
+  background-color: var(--title-text-color);
+  text-align: center;
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  width: 494px;
+  color: var(--color-white);
+  font-size: 56px;
+  line-height: 1.07;
+}
+
+/* benefits content */
+
+.company-benefits {
+  padding-bottom: 0;
+}
+
+.company-benefits .title {
+  margin-bottom: 8px;
+}
+
+.company-benefits .list {
+  display: flex;
+  gap: 24px;
+}
+
+.company-benefits .item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+/* products content */
+
+.company-products {
+}
+
+.company-products .section-title {
   margin-bottom: 72px;
 }
 
-.about {
+.company-products .list {
+  display: flex;
+  gap: 24px;
+}
+
+.company-products .item {
+}
+
+/* about team */
+
+.owr-team {
   background-color: var(--secondary-background-color);
 }
+
+.owr-team .section-title {
+  margin-bottom: 72px;
+}
+
+.owr-team .title {
+  margin-bottom: 8px;
+}
+
+.owr-team .list {
+  display: flex;
+  gap: 24px;
+}
+
+ .team-border {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+} 
+
+ /* .owr-team .item {
+  padding-bottom: 32px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}  */
 
 /* Portfolio */
 
@@ -233,10 +340,10 @@ address {
 /* Footer */
 
 .footer {
-  background-color: var(--title-text-color);
-  color: var(--cornflower-color);
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: var(--title-text-color);
+  color: var(--cornflower-color);
 }
 
 .footer .logo {
