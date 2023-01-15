@@ -303,13 +303,14 @@ address {
 
 .portfolio .item {
   width: calc((100% - 2 * 24px) / 3);
-  border-bottom: 1px solid var(--cornflower-color);
 }
 
 .portfolio-border {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
+  border: 1px solid var(--cornflower-color);
+  border-top: none;
 }
 
 /* Button */
