@@ -116,8 +116,6 @@ address {
 
 .header .link {
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 /* logo */
@@ -146,6 +144,7 @@ address {
 
 .header-items {
   display: flex;
+  align-items: center;
 }
 
 .header-nav {
@@ -165,6 +164,8 @@ address {
 .site-nav .link {
   color: var(--title-text-color);
   font-weight: 500;
+  display: block;
+  padding: 24px 0;
 }
 
 .site-nav .link:hover,
@@ -200,7 +201,7 @@ address {
 
 .hero {
   padding-top: 188px;
-  padding-bottom: 292px;
+  padding-bottom: 188px;
   background-color: var(--title-text-color);
   text-align: center;
 }
@@ -305,6 +306,10 @@ address {
   width: calc((100% - 2 * 24px) / 3);
 }
 
+.portfolio .title {
+  margin-bottom: 8px;
+}
+
 .portfolio-border {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -369,6 +374,7 @@ address {
 
 .footer .logo {
   color: var(--secondary-background-color);
+  margin-right: 0;
 }
 
 .footer .logo:hover,
